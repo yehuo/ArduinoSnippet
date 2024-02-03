@@ -7,7 +7,7 @@ void setup () {
   Serial.begin(9600);
 
   if (!rtc.begin()) {
-    Serial.println("找不到DS3231");
+    Serial.println("Could not find DS3231");
     while (1);
   }
 
